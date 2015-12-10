@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  table: 1
+  customers: MyString
+  reservation_time: 2015-12-09 22:00:23
+  num_of_people: 1
+
+two:
+  table: 1
+  customers: MyString
+  reservation_time: 2015-12-09 22:00:23
+  num_of_people: 1
