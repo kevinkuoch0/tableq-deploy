@@ -18,3 +18,21 @@
 	margin-top: 3%;
 	width: 27%;
 }
+
+#signup-popup {
+	border: 1px solid red;
+	width: 35%;
+	margin: auto;
+	height: 600px;
+	text-align: center;
+	vertical-align: middle;
+}
+
+#signup-popup img{
+	width: 30%;
+	top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
