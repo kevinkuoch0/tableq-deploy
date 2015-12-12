@@ -5,16 +5,18 @@
       	<img class="table-img" alt="table" src="/assets/Table.png">
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#">Sign Up</a></li>
-        <li><a href="#">Sign In</a></li>
+        <li><a href="#" class="signup">Sign Up</a></li>
+        <li><a href="#" class="signin">Sign In</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
 <div id="signup-popup">
-	<p>What type of account would you like to sign up as?</p>
 
-	<img id="User" src="/assets/User.png" alt="User Image Tag">
-	<img id="Owner" src="/assets/Owner.png" alt="Owner Image Tag">
+		<p>What type of account would you like to sign up as?</p>
+
+		<%= link_to image_tag('User.png'), new_user_registration_path %>
+		<%= link_to image_tag('Owner.png'), new_owner_registration_path %>
+		
 </div>

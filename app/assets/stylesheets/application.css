@@ -26,6 +26,11 @@
 	height: 600px;
 	text-align: center;
 	vertical-align: middle;
+	display: none;
+}
+
+#signup-popup p{
+	margin-top: 10%;
 }
 
 #signup-popup img{
