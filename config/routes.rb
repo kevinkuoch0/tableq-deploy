@@ -1,8 +1,14 @@
 Rails.application.routes.draw do
+  devise_for :users
+  get 'signed_in/index'
+
   get 'welcome/index'
 
   devise_for :owners
   devise_for :admins
+
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
