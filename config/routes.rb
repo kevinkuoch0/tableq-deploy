@@ -1,11 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
+  
   get 'signed_in/index'
 
   get 'welcome/index'
 
+  devise_for :users
   devise_for :owners
-  devise_for :admins
+  # devise_for :admins
 
 
 
