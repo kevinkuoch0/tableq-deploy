@@ -16,7 +16,9 @@
 //= require_tree .
 
 $(document).ready(function() {
+	$("#flash").fadeOut(1800);
 	$(".signup").on("click",function() {
 		$("#signup-popup").show();
 	});
+
 });
