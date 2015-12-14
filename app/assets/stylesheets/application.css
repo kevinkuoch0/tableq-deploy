@@ -29,6 +29,28 @@
 	display: none;
 }
 
+#signin-popup {
+	border: 1px solid red;
+	width: 35%;
+	margin: auto;
+	height: 600px;
+	text-align: center;
+	vertical-align: middle;
+	display: none;
+}
+
+#signin-popup p{
+	margin-top: 10%;
+}
+
+#signin-popup img{
+	width: 30%;
+	top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
 #signup-popup p{
 	margin-top: 10%;
 }

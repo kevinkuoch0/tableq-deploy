@@ -20,5 +20,7 @@ $(document).ready(function() {
 	$(".signup").on("click",function() {
 		$("#signup-popup").show();
 	});
-
+	$(".signin").on("click",function() {
+		$("#signin-popup").show();
+	});
 });

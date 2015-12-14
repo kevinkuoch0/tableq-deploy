@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
   
+
   get 'signed_in/index'
 
   get 'welcome/index'
+
+  get 'restaurants/index' => 'restaurants#index'
 
   devise_for :users
   devise_for :owners
