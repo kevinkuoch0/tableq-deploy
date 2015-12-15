@@ -1,80 +1,82 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>TableQ</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
+	<head>
+		<title>TableQ</title>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+		<%= csrf_meta_tags %>
 
-  <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		  <!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		<!-- Optional theme -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
-</head>
-<body>
+	</head>
+	<body>
+		<nav class="navbar-default">
+		  <div class="container-fluid">
+		    	<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		      	<ul class="nav navbar-nav">
+		      		<img class="table-img" alt="table" src="/assets/Table.png">
+		     		</ul>
+			        <ul class="nav navbar-nav navbar-right">
+			        		<% if !user_signed_in? && !owner_signed_in?  %>
+						        <li><a href="#" class="signup">Sign Up</a></li>
+						        <li><a href="#" class="signin">Sign In</a></li>
+						   <% else %> 
+					          	<li class="btn-group navbar-btn">
+						            <button class="btn btn-navbar">My Account</button>
+						            <button data-toggle="dropdown" class="btn btn-navbar dropdown-toggle"><span class="caret"></span>
+						            </button>
+						            <ul class="dropdown-menu">
+						              <li><a href="#">Profile</a></li>
+						              <li><a href="#">Reviews</a></li>
+						              <li><a href="#">Favorites</a></li>
+						              <li><a href="#" class="settings">Settings</a></li>
+						            </ul>
+					          	</li>
+					          	<li><%= link_to 'Home', signed_in_index_path %></li>     
+						        	<li><%= link_to 'Find', restaurants_index_path %></li> 
+						        	<li><%= link_to 'Reservations', reservations_index_path %>
+						        	</li> 
+						        	<li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %>
+						      	</li>
+				      	<% end %>
+			      	</ul>
+		    	</div>
+		  	</div>
+		</nav>
 
-	<nav class="navbar-default">
-	  <div class="container-fluid">
-	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-	      <ul class="nav navbar-nav">
-	      	<img class="table-img" alt="table" src="/assets/Table.png">
-	      </ul>
-        <ul class="nav navbar-nav navbar-right">
-        	<% if !user_signed_in? && !owner_signed_in?  %>
-		        <li><a href="#" class="signup">Sign Up</a></li>
-		        <li><a href="#" class="signin">Sign In</a></li>
-		      <% else %> 
-	          <li class="btn-group navbar-btn">
-	            <button class="btn btn-navbar">My Account</button>
-	            <button data-toggle="dropdown" class="btn btn-navbar dropdown-toggle"><span class="caret"></span></button>
-	            <ul class="dropdown-menu">
-	              <li><a href="#">Profile</a></li>
-	              <li><a href="#">Reviews</a></li>
-	              <li><a href="#">Favorites</a></li>
-	            </ul>
-	          </li>      
-		        <li><%= link_to 'Find', restaurants_index_path %></li> 
-		        <li><a href="#" class="reservations">Reservations</a></li>
-		        <li><a href="#" class="settings">Settings</a></li>
-		        <li><%= link_to('Logout', destroy_user_session_path, :method => :delete) %> 
-		      	</li>
-	      	<% end %>
-      	</ul>
-	    </div>
-	  </div>
-	</nav>
+		<div id="signup-popup">
 
-<div id="signup-popup">
+			<p>What type of account would you like to sign up as?</p>
 
-		<p>What type of account would you like to sign up as?</p>
+			<%= link_to image_tag('User.png'), new_user_registration_path %>
+			<%= link_to image_tag('Owner.png'), new_owner_registration_path %>
+				
+		</div>
 
-		<%= link_to image_tag('User.png'), new_user_registration_path %>
-		<%= link_to image_tag('Owner.png'), new_owner_registration_path %>
-		
-</div>
+		<div id="signin-popup">
 
-<div id="signin-popup">
+				<p>What type of account would you like to sign in as?</p>
 
-		<p>What type of account would you like to sign in as?</p>
+				<%= link_to image_tag('User.png'), new_user_session_path %>
+				<%= link_to image_tag('Owner.png'), new_owner_session_path %>
+				
+		</div>
 
-		<%= link_to image_tag('User.png'), new_user_session_path %>
-		<%= link_to image_tag('Owner.png'), new_owner_session_path %>
-		
-</div>
+		<%= yield %>
 
-<%= yield %>
+		<div id="flash">
+			<p class="notice"><%= notice %></p>
+			<p class="alert"><%= alert %></p>
+		</div>
 
-<div id="flash">
-	<p class="notice"><%= notice %></p>
-	<p class="alert"><%= alert %></p>
-</div>
-
-</body>
+	</body>
 </html>
 
 

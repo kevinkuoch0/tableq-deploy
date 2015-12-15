@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
   
 
+  get 'reservations/index'
+
   get 'signed_in/index'
 
   get 'welcome/index'
