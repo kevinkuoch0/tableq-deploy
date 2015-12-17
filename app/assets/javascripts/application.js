@@ -23,4 +23,12 @@ $(document).ready(function() {
 	$(".signin").on("click",function() {
 		$("#signin-popup").show();
 	});
+
+
+	$(".top-right-booth-empty").on("click",function() {
+		$(".top-right-booth").show();
+	$(".top-right-booth").on("click",function() {
+		$(".top-right-booth").hide();
+		});
+	});
 });

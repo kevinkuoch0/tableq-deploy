@@ -1,4 +1,5 @@
 class WelcomeController < ApplicationController
+	private
 		def index
 			if user_signed_in?
 				redirect_to signed_in_index_path

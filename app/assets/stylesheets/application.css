@@ -75,9 +75,13 @@
 	display: none;
 }
 
+
 .navbar-default{
 	padding-right: 15%;
   	padding-left: 15%;
+  	position: fixed;
+  	z-index: 9999;
+  	width: 100%;
 }
 
 .banner{
@@ -89,16 +93,141 @@
 }
 
 .floor{
-	margin-top: 30px;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 1600px;
-
+	margin-top: 124px;
+    width: 1100px;
+    margin-left: 300px;
 }
 
 .top-right-booth{
 	position: absolute;
-	bottom: 670px;
-	left: 610px;
+	top: 179px;
+	left: 614px;
+	width: 100px;
+	display: none;
 }
+
+.top-right-booth-empty{
+	position: absolute;
+	top: 179px;
+	left: 614px;
+	width: 100px;
+	height: 100px;
+	border: 1px solid red;
+}
+
+
+.top-left-booth{
+	position: absolute;
+	top: 188px;
+	left: 452px;
+	width: 100px;
+	display: none;
+
+}
+
+.diagonal-upper-left-booth{
+	position: absolute;
+	top: 215px;
+	left: 338px;
+	width: 100px;
+	display: none;
+
+}
+
+.left-booth{
+	position: absolute;
+	top: 351px;
+	left: 307px;
+	width: 80px;
+	display: none;
+
+}
+
+.diagonal-bottom-left-booth{
+	position: absolute;
+	top: 466px;
+	left: 338px;
+	width: 100px;
+	display: none;
+}
+
+.bottom-left-booth{
+	position: absolute;
+	top: 516px;
+	left: 454px;
+	width: 100px;
+	display: none;
+}
+
+.bottom-right-booth{
+	position: absolute;
+	top: 528px;
+	left: 615px;
+	width: 100px;
+	display: none;
+}
+
+.round-table-left-bottom{
+	position: absolute;
+	top: 415px;
+	left: 446px;
+	width: 80px;
+	display: none;
+}
+
+.round-table-left-top{
+	position: absolute;
+	top: 316px;
+	left: 446px;
+	width: 80px;
+	display: none;
+}
+
+.round-table-middle-top-left{
+	position: absolute;
+	top: 300px;
+	left: 700px;
+	width: 80px;
+	display: none;
+}
+
+.round-table-middle-top-middle{
+	position: absolute;
+	top: 300px;
+	left: 805px;
+	width: 80px;
+	display: none;
+}
+
+.round-table-middle-top-right{
+	position: absolute;
+	top: 300px;
+	left: 920px;
+	width: 80px;
+	display: none;
+}
+
+.round-table-middle-bottom-left{
+	position: absolute;
+	top: 400px;
+	left: 700px;
+	width: 80px;
+	display: none;
+}
+
+.round-table-middle-bottom-middle{
+	position: absolute;
+	top: 400px;
+	left: 807px;
+	width: 80px;
+	display: none;
+}
+
+.round-table-middle-bottom-right{
+	position: absolute;
+	top: 400px;
+	left: 920px;
+	width: 80px;
+	display: none;
+}
+
