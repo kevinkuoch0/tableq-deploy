@@ -89,10 +89,16 @@
 }
 
 .floor{
-	margin-top: 5%;
+	margin-top: 30px;
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    line-height: 0;
-    margin-bottom: 40%;
+    width: 1600px;
+
+}
+
+.top-right-booth{
+	position: absolute;
+	bottom: 670px;
+	left: 610px;
 }
