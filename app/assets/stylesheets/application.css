@@ -19,6 +19,10 @@
 	width: 27%;
 }
 
+.wrapper{
+	margin-top: 50px;
+}
+
 #signup-popup {
 	border: 1px solid red;
 	width: 35%;
@@ -82,7 +86,9 @@
   	position: fixed;
   	z-index: 9999;
   	width: 100%;
+  	top: 0;
 }
+
 
 .banner{
     display: block;
@@ -100,7 +106,7 @@
 
 .top-right-booth{
 	position: absolute;
-	top: 179px;
+	top: 229px;
 	left: 614px;
 	width: 100px;
 	display: none;
@@ -108,7 +114,7 @@
 
 .top-right-booth-empty{
 	position: absolute;
-	top: 179px;
+	top: 229px;
 	left: 614px;
 	width: 100px;
 	height: 90px;
@@ -118,7 +124,7 @@
 
 .top-left-booth{
 	position: absolute;
-	top: 188px;
+	top: 238px;
 	left: 452px;
 	width: 100px;
 	display: none;
@@ -127,7 +133,7 @@
 
 .top-left-booth-empty{
 	position: absolute;
-	top: 188px;
+	top: 238px;
 	left: 452px;
 	width: 100px;
 	height: 90px;
@@ -137,7 +143,7 @@
 
 .diagonal-upper-left-booth{
 	position: absolute;
-	top: 215px;
+	top: 265px;
 	left: 338px;
 	width: 100px;
 	display: none;
@@ -146,7 +152,7 @@
 
 .diagonal-upper-left-booth-empty{
 	position: absolute;
-	top: 215px;
+	top: 265px;
 	left: 338px;
 	width: 100px;
 	height: 90px;
@@ -156,7 +162,7 @@
 
 .left-booth{
 	position: absolute;
-	top: 351px;
+	top: 401px;
 	left: 307px;
 	width: 80px;
 	display: none;
@@ -165,7 +171,7 @@
 
 .left-booth-empty{
 	position: absolute;
-	top: 351px;
+	top: 401px;
 	left: 307px;
 	width: 80px;
 	height: 90px;
@@ -175,7 +181,7 @@
 
 .diagonal-bottom-left-booth{
 	position: absolute;
-	top: 466px;
+	top: 522px;
 	left: 338px;
 	width: 100px;
 	display: none;
@@ -183,7 +189,7 @@
 
 .diagonal-bottom-left-booth-empty{
 	position: absolute;
-	top: 478px;
+	top: 528px;
 	left: 338px;
 	width: 100px;
 	height: 90px;
@@ -192,7 +198,7 @@
 
 .bottom-left-booth{
 	position: absolute;
-	top: 516px;
+	top: 566px;
 	left: 454px;
 	width: 100px;
 	display: none;
@@ -200,7 +206,7 @@
 
 .bottom-left-booth-empty{
 	position: absolute;
-	top: 516px;
+	top: 566px;
 	left: 454px;
 	width: 100px;
 	height: 90px;
@@ -208,7 +214,7 @@
 
 .bottom-right-booth{
 	position: absolute;
-	top: 528px;
+	top: 578px;
 	left: 615px;
 	width: 100px;
 	display: none;
@@ -216,7 +222,7 @@
 
 .bottom-right-booth-empty{
 	position: absolute;
-	top: 528px;
+	top: 578px;
 	left: 615px;
 	width: 100px;
 	height: 90px;
@@ -225,7 +231,7 @@
 
 .round-table-left-bottom{
 	position: absolute;
-	top: 415px;
+	top: 465px;
 	left: 446px;
 	width: 80px;
 	display: none;
@@ -233,7 +239,7 @@
 
 .round-table-left-bottom-empty{
 	position: absolute;
-	top: 415px;
+	top: 465px;
 	left: 446px;
 	width: 80px;
 	height: 80px;
@@ -242,7 +248,7 @@
 
 .round-table-left-top{
 	position: absolute;
-	top: 316px;
+	top: 366px;
 	left: 446px;
 	width: 80px;
 	display: none;
@@ -250,7 +256,7 @@
 
 .round-table-left-top-empty{
 	position: absolute;
-	top: 316px;
+	top: 366px;
 	left: 446px;
 	width: 80px;
 	height: 80px;
@@ -259,7 +265,7 @@
 
 .round-table-middle-top-left{
 	position: absolute;
-	top: 300px;
+	top: 350px;
 	left: 700px;
 	width: 80px;
 	display: none;
@@ -267,7 +273,7 @@
 
 .round-table-middle-top-left-empty{
 	position: absolute;
-	top: 300px;
+	top: 350px;
 	left: 700px;
 	width: 80px;
 	height: 80px;
@@ -276,7 +282,7 @@
 
 .round-table-middle-top-middle{
 	position: absolute;
-	top: 300px;
+	top: 350px;
 	left: 805px;
 	width: 80px;
 	display: none;
@@ -284,7 +290,7 @@
 
 .round-table-middle-top-middle-empty{
 	position: absolute;
-	top: 300px;
+	top: 350px;
 	left: 805px;
 	width: 80px;
 	height: 80px;
@@ -293,7 +299,7 @@
 
 .round-table-middle-top-right{
 	position: absolute;
-	top: 300px;
+	top: 350px;
 	left: 920px;
 	width: 80px;
 	display: none;
@@ -301,7 +307,7 @@
 
 .round-table-middle-top-right-empty{
 	position: absolute;
-	top: 300px;
+	top: 350px;
 	left: 920px;
 	width: 80px;
 	height: 80px;
@@ -310,7 +316,7 @@
 
 .round-table-middle-bottom-left{
 	position: absolute;
-	top: 400px;
+	top: 450px;
 	left: 700px;
 	width: 80px;
 	display: none;
@@ -318,7 +324,7 @@
 
 .round-table-middle-bottom-left-empty{
 	position: absolute;
-	top: 400px;
+	top: 450px;
 	left: 700px;
 	width: 80px;
 	height: 80px;
@@ -327,7 +333,7 @@
 
 .round-table-middle-bottom-middle{
 	position: absolute;
-	top: 400px;
+	top: 450px;
 	left: 807px;
 	width: 80px;
 	display: none;
@@ -335,7 +341,7 @@
 
 .round-table-middle-bottom-middle-empty{
 	position: absolute;
-	top: 400px;
+	top: 450px;
 	left: 807px;
 	width: 80px;
 	height: 80px;
@@ -344,7 +350,7 @@
 
 .round-table-middle-bottom-right{
 	position: absolute;
-	top: 400px;
+	top: 450px;
 	left: 920px;
 	width: 80px;
 	display: none;
@@ -352,7 +358,7 @@
 
 .round-table-middle-bottom-right-empty{
 	position: absolute;
-	top: 400px;
+	top: 450px;
 	left: 920px;
 	width: 80px;
 	height: 80px;
