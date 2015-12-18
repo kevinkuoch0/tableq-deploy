@@ -28,6 +28,8 @@ gem 'devise'
 gem 'coffee-script-source', '1.8.0'
 
 gem 'omniauth'
+
+gem 'jquery-turbolinks'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
