@@ -2,6 +2,14 @@
 
 	<%= image_tag("restaurant-floor.jpg", class: "floor") %>
 
+		
+<%= form_for @reservation do |f| %>
+	<%= f.label :num_of_people, "Number of Guests"%>
+  <%= f.number_field :num_of_people %>
+  <%= f.label :reservation_time, "Reservation Time" %>
+  <%= f.time_field :reservation_time %>
+  <%= f.submit %>
+<% end %>
 
 
 		<a href="#"><div class="top-right-booth-empty">

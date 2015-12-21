@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   
 
-  get 'reservations/index'
+  get 'reservations/index', as: 'reservations'
+
+  post 'reservations/index', to: 'reservations#create'
 
   get 'signed_in/index'
 

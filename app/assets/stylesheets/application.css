@@ -365,3 +365,20 @@
 
 }
 
+
+
+#myform {
+    text-align: center;
+    padding: 5px;
+    border: 1px solid red;
+    margin: 2%;
+    width: 40%;
+    margin: 0 auto;
+}
+.qty {
+    width: 40px;
+    height: 25px;
+    text-align: center;
+}
+input.qtyplus { width:25px; height:25px;}
+input.qtyminus { width:25px; height:25px;}
