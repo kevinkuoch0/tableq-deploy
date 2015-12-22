@@ -59,13 +59,13 @@ ActiveRecord::Schema.define(version: 20151222024853) do
   add_index "owners", ["reset_password_token"], name: "index_owners_on_reset_password_token", unique: true
 
   create_table "reservations", force: :cascade do |t|
-    t.string   "table"
     t.time     "reservation_time"
     t.integer  "num_of_people"
     t.datetime "created_at",       null: false
     t.datetime "updated_at",       null: false
     t.string   "email"
     t.integer  "user_id"
+    t.string   "table_id"
   end
 
   create_table "tables", force: :cascade do |t|
