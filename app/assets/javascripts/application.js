@@ -26,10 +26,10 @@ $(document).ready(function() {
 	});
 
 
-	$(".top-right-booth-empty").on("click",function() {
-		$(".top-right-booth").show();
-	$(".top-right-booth").on("click",function() {
-		$(".top-right-booth").hide();
+	$("#top-right-booth-empty").on("click",function() {
+		$("#top-right-booth").show();
+	$("#top-right-booth").on("click",function() {
+		$("#top-right-booth").hide();
 		});
 	});
 

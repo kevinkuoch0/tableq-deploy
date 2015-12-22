@@ -6,6 +6,7 @@ class ReservationsController < ApplicationController
 
   def create
   	@reservation = Reservation.new(reservation_params.merge(email: current_user.email, user_id: current_user.id))
+    # @reservation.table 
   	@reservation.save
     redirect_to reservations_path
   end

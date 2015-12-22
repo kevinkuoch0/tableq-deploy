@@ -3,25 +3,12 @@
 	<%= image_tag("restaurant-floor.jpg", class: "floor") %>
 
 		
-<%= form_for @reservation do |f| %>
-	<%= f.label :num_of_people, "Number of Guests"%>
-  <%= f.number_field :num_of_people %>
-  <br />
-  <br />
-  <%= f.label :reservation_time, "Reservation Time" %>
-  <%= f.time_field :reservation_time %>
-  <br />
-  <br />
-  <%= f.submit %>
-<% end %>
-
-
-		<a href="#" method="POST" action="reservation/create"><div class="top-right-booth-empty">
+		<a href="#top-right-booth" ><div id="top-right-booth-empty">
 			</div>
 		</a>
 		
 		<a href="#">
-			<%= image_tag("toprightbooth.png", class: "top-right-booth") %>
+			<%= image_tag("toprightbooth.png", id: "top-right-booth") %>
 		</a>
 
 	
@@ -146,6 +133,6 @@
 			<%= image_tag("roundtable.png", class: "round-table-middle-bottom-right") %>
 		</a>
 
-
+<%= render 'reservation_form' %>
 
 </div>

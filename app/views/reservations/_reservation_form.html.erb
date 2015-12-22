@@ -1,0 +1,12 @@
+<%= form_for @reservation do |f| %>
+	<%= f.label :num_of_people, "Number of Guests"%>
+  <%= f.number_field :num_of_people %>
+  <br />
+  <br />
+  <%= f.label :reservation_time, "Reservation Time" %>
+  <%= f.time_field :reservation_time %>
+  <br />
+  <br />
+<%= f.hidden_field :table_id, value: "D9" %>
+  <%= f.submit %>
+<% end %>

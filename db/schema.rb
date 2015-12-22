@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151222013650) do
+ActiveRecord::Schema.define(version: 20151222024853) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -59,7 +59,7 @@ ActiveRecord::Schema.define(version: 20151222013650) do
   add_index "owners", ["reset_password_token"], name: "index_owners_on_reset_password_token", unique: true
 
   create_table "reservations", force: :cascade do |t|
-    t.integer  "table"
+    t.string   "table"
     t.time     "reservation_time"
     t.integer  "num_of_people"
     t.datetime "created_at",       null: false
