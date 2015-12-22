@@ -129,12 +129,7 @@ $(document).ready(function() {
 	$(".round-table-middle-bottom-right").on("click",function() {
 		$(".round-table-middle-bottom-right").hide();
 		});	
-
-
-
-	});						
-});
-
-
+						
+	});
     
 });
