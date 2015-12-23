@@ -104,7 +104,7 @@
     margin-left: 300px;
 }
 
-#top-right-booth{
+.top-right-booth{
 	position: absolute;
 	top: 229px;
 	left: 614px;
@@ -112,7 +112,7 @@
 	display: none;
 }
 
-#top-right-booth-empty{
+.top-right-booth-empty{
 	position: absolute;
 	top: 229px;
 	left: 614px;
