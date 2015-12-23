@@ -131,6 +131,63 @@ $(document).ready(function() {
 	});
 
 	$(".top-right-booth-empty").on("click",function() {
-		$("#reservation_table_id").val("D9");
+		$("#reservation_table_id").val("A1");	
 	});
+
+	$(".top-left-booth-empty").on("click",function() {
+		$("#reservation_table_id").val("A2");	
+	});
+
+	$(".diagonal-upper-left-booth-empty").on("click",function() {
+		$("#reservation_table_id").val("A3");	
+	});
+
+	$(".left-booth-empty").on("click",function() {
+		$("#reservation_table_id").val("A4");	
+	});
+
+	$(".diagonal-bottom-left-booth-empty").on("click",function() {
+		$("#reservation_table_id").val("A5");	
+	});
+
+	$(".bottom-left-booth-empty").on("click",function() {
+		$("#reservation_table_id").val("A6");	
+	});
+
+	$(".bottom-right-booth-empty").on("click",function() {
+		$("#reservation_table_id").val("A7");	
+	});
+
+	$(".round-table-left-bottom-empty").on("click",function() {
+		$("#reservation_table_id").val("B1");	
+	});
+
+	$(".round-table-left-top-empty").on("click",function() {
+		$("#reservation_table_id").val("B2");	
+	});	
+
+	$(".round-table-middle-top-left-empty").on("click",function() {
+		$("#reservation_table_id").val("B3");	
+	});	
+
+	$(".round-table-middle-top-middle-empty").on("click",function() {
+		$("#reservation_table_id").val("B4");	
+	});	
+
+	$(".round-table-middle-top-right-empty").on("click",function() {
+		$("#reservation_table_id").val("B5");	
+	});	
+
+	$(".round-table-middle-bottom-left-empty").on("click",function() {
+		$("#reservation_table_id").val("B6");	
+	});	
+
+	$(".round-table-middle-bottom-middle-empty").on("click",function() {
+		$("#reservation_table_id").val("B7");	
+	});	
+
+	$(".round-table-middle-bottom-right-empty").on("click",function() {
+		$("#reservation_table_id").val("B8");	
+	});		
+																		
 });
