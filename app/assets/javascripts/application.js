@@ -32,6 +32,7 @@ $(document).ready(function() {
 		});
 	});
 
+
 	$(".top-left-booth-empty").on("click",function() {
 		$(".top-left-booth").show();
 		$(".top-left-booth").on("click",function() {

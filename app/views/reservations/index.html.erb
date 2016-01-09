@@ -1,128 +1,73 @@
 <div class="house">
 
-	<%= image_tag("restaurant-floor.jpg", class: "floor") %>
+    <%= image_tag("restaurant-floor.jpg", class: "floor") %>
 
-		
-		<a href="#"><div class="top-right-booth-empty">
-			</div>
-		</a>
-		
-		<a href="#">
-			<%= image_tag("toprightbooth.png", class: "top-right-booth") %>
-		</a>
+    <%= content_tag(:div, nil, remote: true, class: "top-right-booth-empty") %>
 
-	
+    <%= image_tag("toprightbooth.png", class: "top-right-booth") %>
 
-		<a href="#"><div class="top-left-booth-empty">
-			</div>
-		</a>
+    <%= content_tag(:div, nil, remote: true, class: "top-left-booth-empty") %>
 
-		<a href="#">
-			<%= image_tag("northleft.png", class: "top-left-booth") %>
-		</a>
+    <%= image_tag("northleft.png", class: "top-left-booth") %>
 
+    <%= content_tag(:div, nil, remote: true, class: "diagonal-upper-left-booth-empty") %>
 
+    <%= image_tag("upperleftbooth.png", class: "diagonal-upper-left-booth") %>
 
-		<a href="#"><div class="diagonal-upper-left-booth-empty">
-			</div>
-		</a>
-		<a href="#">
-			<%= image_tag("upperleftbooth.png", class: "diagonal-upper-left-booth") %>
-		</a>
+    <%= content_tag(:div, nil, remote: true, class: "left-booth-empty") %>
+
+    <%= image_tag("leftbooth.png", class: "left-booth") %>
+
+    <%= content_tag(:div, nil, remote: true, class: "diagonal-bottom-left-booth-empty") %>
+
+    <%= image_tag("bottomleftbooth.png", class: "diagonal-bottom-left-booth") %>
+
+    <%= content_tag(:div, nil, remote: true, class: "bottom-left-booth-empty") %>
+
+    <%= image_tag("bottomleft.png", class: "bottom-left-booth") %>
 
 
+    <%= content_tag(:div, nil, remote: true, class: "bottom-right-booth-empty") %>
 
-		<a href="#"><div class="left-booth-empty">
-			</div>
-		</a>
-		<a href="#">
-			<%= image_tag("leftbooth.png", class: "left-booth") %>
-		</a>
+    <%= image_tag("bottomrightbooth.png", class: "bottom-right-booth") %>
 
+    <%= content_tag(:div, nil, remote: true, class: "round-table-left-bottom-empty") %>
 
-
-		<a href="#"><div class="diagonal-bottom-left-booth-empty">
-			</div>
-		</a>
-		<a href="#">
-			<%= image_tag("bottomleftbooth.png", class: "diagonal-bottom-left-booth") %>
-		</a>
-	
-
-		<a href="#"><div class="bottom-left-booth-empty">
-			</div>
-		</a>
-		<a href="#">
-			<%= image_tag("bottomleft.png", class: "bottom-left-booth") %>
-		</a>
-	
+    <%= image_tag("roundtable.png", class: "round-table-left-bottom") %>
 
 
-		<a href="#"><div class="bottom-right-booth-empty">
-			</div>
-		</a>
-		<a href="#">
-			<%= image_tag("bottomrightbooth.png", class: "bottom-right-booth") %>
-		</a>
-	
+    <%= content_tag(:div, nil, remote: true, class: "round-table-left-top-empty") %>
+
+    <%= image_tag("roundtable.png", class: "round-table-left-top") %>
 
 
-		<a href="#"><div class="round-table-left-bottom-empty">
-			</div>
-		<a href="#">
-			<%= image_tag("roundtable.png", class: "round-table-left-bottom") %>
-		</a>
+    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-top-left-empty") %> 
+
+    <%= image_tag("roundtable.png", class: "round-table-middle-top-left") %>
 
 
+    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-top-middle-empty") %> 
 
-		<a href="#"><div class="round-table-left-top-empty">
-			</div>
-		<a href="#">
-			<%= image_tag("roundtable.png", class: "round-table-left-top") %>
-		</a>
+    <%= image_tag("roundtable.png", class: "round-table-middle-top-middle") %>
 
 
-		<a href="#"><div class="round-table-middle-top-left-empty">
-			</div>
-		<a href="#">
-			<%= image_tag("roundtable.png", class: "round-table-middle-top-left") %>
-		</a>
+    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-top-right-empty") %> 
+
+    <%= image_tag("roundtable.png", class: "round-table-middle-top-right") %>
+
+    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-bottom-left-empty") %> 
+
+    <%= image_tag("roundtable.png", class: "round-table-middle-bottom-left") %>
+
+    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-bottom-middle-empty") %> 
+
+    <%= image_tag("roundtable.png", class: "round-table-middle-bottom-middle") %>
+
+    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-bottom-right-empty") %> 
+
+    <%= image_tag("roundtable.png", class: "round-table-middle-bottom-right") %>
 
 
-
-		<a href="#"><div class="round-table-middle-top-middle-empty">
-			</div>
-		<a href="#">
-			<%= image_tag("roundtable.png", class: "round-table-middle-top-middle") %>
-		</a>
-
-
-		<a href="#"><div class="round-table-middle-top-right-empty">
-			</div>
-		<a href="#">
-			<%= image_tag("roundtable.png", class: "round-table-middle-top-right") %>
-		</a>
-
-
-		<a href="#"><div class="round-table-middle-bottom-left-empty">
-			</div>
-		<a href="#">
-			<%= image_tag("roundtable.png", class: "round-table-middle-bottom-left") %>
-		</a>
-
-
-		<a href="#"><div class="round-table-middle-bottom-middle-empty">
-			</div>
-		<a href="#">
-			<%= image_tag("roundtable.png", class: "round-table-middle-bottom-middle") %>
-		</a>
-
-		<a href="#"><div class="round-table-middle-bottom-right-empty">
-			</div>
-		<a href="#">
-			<%= image_tag("roundtable.png", class: "round-table-middle-bottom-right") %>
-		</a>
-
-<%= render 'reservation_form' %>
+    <%= render 'reservation_form' %>
 
 </div>

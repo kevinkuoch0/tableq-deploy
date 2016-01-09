@@ -7,8 +7,12 @@ class ReservationsController < ApplicationController
   def create
   	@reservation = Reservation.new(reservation_params.merge(email: current_user.email, user_id: current_user.id))
     # @reservation.table 
-  	@reservation.save
-    redirect_to reservations_path
+    @reservation.save
+
+    respond_to do |format|
+      format.html { redirect_to reservations_path }
+      format.js # render reservations/create.js.erb
+    end
   end
 
   private

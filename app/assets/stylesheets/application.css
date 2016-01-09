@@ -14,6 +14,7 @@
  *= require_self
  */
 
+
 .navbar-nav img{
 	margin-top: 3%;
 	width: 27%;
@@ -79,6 +80,24 @@
 	display: none;
 }
 
+.signed_in_index{
+	padding-top: 60px;
+	width: 60%;
+	margin: 0 auto;
+	padding-bottom: 60px;
+	text-align: center;
+}
+
+.signed_in_index h3{
+	font-family: "MYRIADPRO-REGULAR";
+	font-weight: bold;
+	font-size: 60px;
+}
+
+.signed_in_index p{
+	font-family: "MYRIADPRO-REGULAR";
+	font-size: 25px;
+}
 
 .navbar-default{
 	padding-right: 15%;
@@ -94,9 +113,17 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 66%;
-    height: 65vh;
+    width: 100%;
+    height: 85vh;
 }
+
+.banner2{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
 
 .floor{
 	margin-top: 124px;
@@ -110,6 +137,8 @@
 	left: 614px;
 	width: 100px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;
 }
 
 .top-right-booth-empty{
@@ -118,7 +147,8 @@
 	left: 614px;
 	width: 100px;
 	height: 90px;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 
@@ -128,6 +158,8 @@
 	left: 452px;
 	width: 100px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 
 }
 
@@ -137,7 +169,8 @@
 	left: 452px;
 	width: 100px;
 	height: 90px;
-
+	cursor: pointer;
+	cursor: hand;
 
 }
 
@@ -147,7 +180,8 @@
 	left: 338px;
 	width: 100px;
 	display: none;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 .diagonal-upper-left-booth-empty{
@@ -156,7 +190,8 @@
 	left: 338px;
 	width: 100px;
 	height: 90px;
-
+	cursor: pointer;
+	cursor: hand;
 
 }
 
@@ -166,7 +201,8 @@
 	left: 307px;
 	width: 80px;
 	display: none;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 .left-booth-empty{
@@ -175,7 +211,8 @@
 	left: 307px;
 	width: 80px;
 	height: 90px;
-
+	cursor: pointer;
+	cursor: hand;
 
 }
 
@@ -185,6 +222,8 @@
 	left: 338px;
 	width: 100px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .diagonal-bottom-left-booth-empty{
@@ -193,7 +232,8 @@
 	left: 338px;
 	width: 100px;
 	height: 90px;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 .bottom-left-booth{
@@ -202,6 +242,8 @@
 	left: 454px;
 	width: 100px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .bottom-left-booth-empty{
@@ -210,6 +252,8 @@
 	left: 454px;
 	width: 100px;
 	height: 90px;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .bottom-right-booth{
@@ -218,6 +262,8 @@
 	left: 615px;
 	width: 100px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .bottom-right-booth-empty{
@@ -226,7 +272,8 @@
 	left: 615px;
 	width: 100px;
 	height: 90px;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 .round-table-left-bottom{
@@ -235,6 +282,8 @@
 	left: 446px;
 	width: 80px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-left-bottom-empty{
@@ -243,7 +292,8 @@
 	left: 446px;
 	width: 80px;
 	height: 80px;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 .round-table-left-top{
@@ -252,6 +302,8 @@
 	left: 446px;
 	width: 80px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-left-top-empty{
@@ -260,7 +312,8 @@
 	left: 446px;
 	width: 80px;
 	height: 80px;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 .round-table-middle-top-left{
@@ -269,6 +322,8 @@
 	left: 700px;
 	width: 80px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-middle-top-left-empty{
@@ -277,7 +332,8 @@
 	left: 700px;
 	width: 80px;
 	height: 80px;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 .round-table-middle-top-middle{
@@ -286,6 +342,8 @@
 	left: 805px;
 	width: 80px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-middle-top-middle-empty{
@@ -294,7 +352,8 @@
 	left: 805px;
 	width: 80px;
 	height: 80px;
-
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-middle-top-right{
@@ -303,6 +362,8 @@
 	left: 920px;
 	width: 80px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-middle-top-right-empty{
@@ -311,7 +372,8 @@
 	left: 920px;
 	width: 80px;
 	height: 80px;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 .round-table-middle-bottom-left{
@@ -320,6 +382,8 @@
 	left: 700px;
 	width: 80px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-middle-bottom-left-empty{
@@ -328,7 +392,8 @@
 	left: 700px;
 	width: 80px;
 	height: 80px;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 .round-table-middle-bottom-middle{
@@ -337,6 +402,8 @@
 	left: 807px;
 	width: 80px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-middle-bottom-middle-empty{
@@ -345,7 +412,8 @@
 	left: 807px;
 	width: 80px;
 	height: 80px;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
 .round-table-middle-bottom-right{
@@ -354,6 +422,8 @@
 	left: 920px;
 	width: 80px;
 	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-middle-bottom-right-empty{
@@ -362,10 +432,18 @@
 	left: 920px;
 	width: 80px;
 	height: 80px;
-
+	cursor: pointer;
+	cursor: hand;
 }
 
-
+#new_reservation{
+	text-align: center;
+    padding: 5px;
+    margin: 2%;
+    width: 40%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
 
 #myform {
     text-align: center;
@@ -375,10 +453,73 @@
     width: 40%;
     margin: 0 auto;
 }
+
 .qty {
     width: 40px;
     height: 25px;
     text-align: center;
 }
+
+@font-face{
+  font-family: 'MYRIADPRO-REGULAR';
+  src: url('/assets/MYRIADPRO-REGULAR.OTF');
+}
+
+footer{
+	text-align: center;
+	height: 150px;
+	background-color: #EDEDED;
+}
+
+footer h3{
+	font-weight: bold;
+	color: #404041;
+	font-family: "MYRIADPRO-REGULAR"
+}
+
+.vertical-line{
+	margin-top: 20px;
+	border-left:medium #404041 solid; 
+	height: 120px;
+	position: absolute;
+	left: 590px;
+	
+}
+
+
+.vertical-line2{
+	margin-top: 20px;
+	border-left:medium #404041 solid; 
+	height: 120px;
+	position: absolute;
+	right: 590px;
+	
+}
+
+.dining{
+	position: absolute;
+	top: 12%;
+	left: 40%;
+	z-index: 1;
+	width: 100%;
+}
+
+@font-face{
+  font-family: 'Madisonian Bold';
+  src: url('/assets/Madisonian Bold.ttf');
+}
+
+.dining h3{
+	color: white;
+	font-family: "Madisonian Bold";
+	font-size: 35px;
+	
+}
+.closing-footer{
+	text-align: center;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 input.qtyplus { width:25px; height:25px;}
 input.qtyminus { width:25px; height:25px;}
