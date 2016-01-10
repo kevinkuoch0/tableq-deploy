@@ -1,73 +1,86 @@
 <div class="house">
 
-    <%= image_tag("restaurant-floor.jpg", class: "floor") %>
-
+<% if user_signed_in? %>
     <%= content_tag(:div, nil, remote: true, class: "top-right-booth-empty") %>
-
-    <%= image_tag("toprightbooth.png", class: "top-right-booth") %>
 
     <%= content_tag(:div, nil, remote: true, class: "top-left-booth-empty") %>
 
-    <%= image_tag("northleft.png", class: "top-left-booth") %>
-
     <%= content_tag(:div, nil, remote: true, class: "diagonal-upper-left-booth-empty") %>
-
-    <%= image_tag("upperleftbooth.png", class: "diagonal-upper-left-booth") %>
 
     <%= content_tag(:div, nil, remote: true, class: "left-booth-empty") %>
 
-    <%= image_tag("leftbooth.png", class: "left-booth") %>
-
     <%= content_tag(:div, nil, remote: true, class: "diagonal-bottom-left-booth-empty") %>
-
-    <%= image_tag("bottomleftbooth.png", class: "diagonal-bottom-left-booth") %>
 
     <%= content_tag(:div, nil, remote: true, class: "bottom-left-booth-empty") %>
 
-    <%= image_tag("bottomleft.png", class: "bottom-left-booth") %>
-
-
     <%= content_tag(:div, nil, remote: true, class: "bottom-right-booth-empty") %>
-
-    <%= image_tag("bottomrightbooth.png", class: "bottom-right-booth") %>
 
     <%= content_tag(:div, nil, remote: true, class: "round-table-left-bottom-empty") %>
 
-    <%= image_tag("roundtable.png", class: "round-table-left-bottom") %>
-
-
     <%= content_tag(:div, nil, remote: true, class: "round-table-left-top-empty") %>
-
-    <%= image_tag("roundtable.png", class: "round-table-left-top") %>
-
 
     <%= content_tag(:div, nil, remote: true, class: "round-table-middle-top-left-empty") %> 
 
-    <%= image_tag("roundtable.png", class: "round-table-middle-top-left") %>
-
-
     <%= content_tag(:div, nil, remote: true, class: "round-table-middle-top-middle-empty") %> 
-
-    <%= image_tag("roundtable.png", class: "round-table-middle-top-middle") %>
-
 
     <%= content_tag(:div, nil, remote: true, class: "round-table-middle-top-right-empty") %> 
 
-    <%= image_tag("roundtable.png", class: "round-table-middle-top-right") %>
-
     <%= content_tag(:div, nil, remote: true, class: "round-table-middle-bottom-left-empty") %> 
-
-    <%= image_tag("roundtable.png", class: "round-table-middle-bottom-left") %>
 
     <%= content_tag(:div, nil, remote: true, class: "round-table-middle-bottom-middle-empty") %> 
 
+    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-bottom-right-empty") %>
+
+
+
+
+    
+<% end %>
+
+
+    <%= image_tag("restaurant-floor.jpg", class: "floor") %>
+
+    <%= image_tag("toprightbooth.png", class: "top-right-booth") %>
+
+    <%= image_tag("northleft.png", class: "top-left-booth") %>
+
+    <%= image_tag("upperleftbooth.png", class: "diagonal-upper-left-booth") %>
+    <%= image_tag("leftbooth.png", class: "left-booth") %>
+
+    <%= image_tag("bottomleftbooth.png", class: "diagonal-bottom-left-booth") %>
+    <%= image_tag("bottomleft.png", class: "bottom-left-booth") %>
+
+    <%= image_tag("bottomrightbooth.png", class: "bottom-right-booth") %>
+
+    <%= image_tag("roundtable.png", class: "round-table-left-bottom") %>
+
+    <%= image_tag("roundtable.png", class: "round-table-left-top") %>
+
+    <%= image_tag("roundtable.png", class: "round-table-middle-top-left") %>
+    <%= image_tag("roundtable.png", class: "round-table-middle-top-middle") %>
+    <%= image_tag("roundtable.png", class: "round-table-middle-top-right") %>
+    <%= image_tag("roundtable.png", class: "round-table-middle-bottom-left") %>
     <%= image_tag("roundtable.png", class: "round-table-middle-bottom-middle") %>
-
-    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-bottom-right-empty") %> 
-
     <%= image_tag("roundtable.png", class: "round-table-middle-bottom-right") %>
 
+    
+    <%= render 'reservation_form' if user_signed_in? %>
 
-    <%= render 'reservation_form' %>
+
+
+<% if owner_signed_in? %>
+
+<script>
+
+var client = new Faye.Client('/faye');
+
+var subscription = client.subscribe('/reservations', function(data){
+  alert(data);
+});
+
+</script>
+
+<% end %>
+
 
 </div>
