@@ -190,5 +190,5 @@ $(document).ready(function() {
 	$(".round-table-middle-bottom-right-empty").on("click",function() {
 		$("#reservation_table_id").val("B8");	
 	});		
-																		
+	
 });

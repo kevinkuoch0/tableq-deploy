@@ -15,6 +15,7 @@ gem 'omniauth'
 gem 'jquery-turbolinks'
 gem 'faye'
 gem 'puma'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
