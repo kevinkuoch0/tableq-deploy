@@ -75,7 +75,7 @@
 var client = new Faye.Client('/faye');
 
 var subscription = client.subscribe('/reservations', function(data){
-  alert(data);
+  console.log(data);
 });
 
 </script>

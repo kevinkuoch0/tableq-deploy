@@ -27,6 +27,8 @@ module TableQ
 
     config.middleware.delete Rack::Lock
 
-    config.middleware.use FayeRails::Middleware, mount: '/faye', :timeout => 25
+    config.middleware.use FayeRails::Middleware, mount: '/faye', :timeout => 25 do
+        map "/reservations" => RealtimeReservationsController
+    end
   end
 end
