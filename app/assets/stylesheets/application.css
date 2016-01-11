@@ -531,7 +531,8 @@ footer h3{
 
 #map{
 	height: 600px;
-	width: 100%;
+	width: 80%;
+	margin: 0 auto;
 }
 
 input.qtyplus { width:25px; height:25px;}
