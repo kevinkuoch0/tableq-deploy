@@ -189,9 +189,18 @@ $(document).ready(function() {
 
 	$(".round-table-middle-bottom-right-empty").on("click",function() {
 		$("#reservation_table").val("B8");	
-	});		
+	});	
 	
+
+
 });
+
+$( document ).ajaxComplete(function() {
+	if ($(".top-right-booth").show() == true){
+		$(".top-right-booth-saved").show();
+	};
+});
+
 
 function renderRestaurantInfo(restaurant){
   return (
@@ -231,3 +240,4 @@ function initMap(){
 	}
 	addMarkerToMap(restaurant,map);
 };
+

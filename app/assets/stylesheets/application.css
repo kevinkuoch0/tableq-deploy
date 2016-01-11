@@ -159,6 +159,16 @@
 	cursor: hand;
 }
 
+.top-right-booth-saved{
+	position: absolute;
+	top: 229px;
+	left: 614px;
+	width: 100px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;
+}
+
 
 .top-left-booth{
 	position: absolute;
@@ -179,6 +189,17 @@
 	height: 90px;
 	cursor: pointer;
 	cursor: hand;
+
+}
+
+.top-left-booth-saved{
+	position: absolute;
+	top: 238px;
+	left: 452px;
+	width: 100px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;	
 
 }
 
@@ -203,6 +224,16 @@
 
 }
 
+.diagonal-upper-left-booth-saved{
+	position: absolute;
+	top: 265px;
+	left: 338px;
+	width: 100px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;
+}
+
 .left-booth{
 	position: absolute;
 	top: 401px;
@@ -224,6 +255,17 @@
 
 }
 
+.left-booth-saved{
+	position: absolute;
+	top: 401px;
+	left: 307px;
+	width: 80px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;
+}
+
+
 .diagonal-bottom-left-booth{
 	position: absolute;
 	top: 522px;
@@ -244,6 +286,17 @@
 	cursor: hand;
 }
 
+.diagonal-bottom-left-booth-saved{
+	position: absolute;
+	top: 522px;
+	left: 338px;
+	width: 100px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;	
+}
+
+
 .bottom-left-booth{
 	position: absolute;
 	top: 566px;
@@ -260,6 +313,16 @@
 	left: 454px;
 	width: 100px;
 	height: 90px;
+	cursor: pointer;
+	cursor: hand;	
+}
+
+.bottom-left-booth-saved{
+	position: absolute;
+	top: 566px;
+	left: 454px;
+	width: 100px;
+	display: none;
 	cursor: pointer;
 	cursor: hand;	
 }
@@ -284,6 +347,16 @@
 	cursor: hand;
 }
 
+.bottom-right-booth-saved{
+	position: absolute;
+	top: 578px;
+	left: 615px;
+	width: 100px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;	
+}
+
 .round-table-left-bottom{
 	position: absolute;
 	top: 465px;
@@ -302,6 +375,16 @@
 	height: 80px;
 	cursor: pointer;
 	cursor: hand;
+}
+
+.round-table-left-bottom-saved{
+	position: absolute;
+	top: 465px;
+	left: 446px;
+	width: 80px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-left-top{
@@ -324,6 +407,16 @@
 	cursor: hand;
 }
 
+.round-table-left-top-saved{
+	position: absolute;
+	top: 366px;
+	left: 446px;
+	width: 80px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;	
+}
+
 .round-table-middle-top-left{
 	position: absolute;
 	top: 350px;
@@ -344,6 +437,16 @@
 	cursor: hand;
 }
 
+.round-table-middle-top-left-saved{
+	position: absolute;
+	top: 350px;
+	left: 700px;
+	width: 80px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;	
+}
+
 .round-table-middle-top-middle{
 	position: absolute;
 	top: 350px;
@@ -360,6 +463,16 @@
 	left: 805px;
 	width: 80px;
 	height: 80px;
+	cursor: pointer;
+	cursor: hand;	
+}
+
+.round-table-middle-top-middle-saved{
+	position: absolute;
+	top: 350px;
+	left: 805px;
+	width: 80px;
+	display: none;
 	cursor: pointer;
 	cursor: hand;	
 }
@@ -384,6 +497,16 @@
 	cursor: hand;
 }
 
+.round-table-middle-top-right-saved{
+	position: absolute;
+	top: 350px;
+	left: 920px;
+	width: 80px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;	
+}
+
 .round-table-middle-bottom-left{
 	position: absolute;
 	top: 450px;
@@ -402,6 +525,16 @@
 	height: 80px;
 	cursor: pointer;
 	cursor: hand;
+}
+
+.round-table-middle-bottom-left-saved{
+	position: absolute;
+	top: 450px;
+	left: 700px;
+	width: 80px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 .round-table-middle-bottom-middle{
@@ -424,6 +557,16 @@
 	cursor: hand;
 }
 
+.round-table-middle-bottom-middle-saved{
+	position: absolute;
+	top: 450px;
+	left: 807px;
+	width: 80px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;	
+}
+
 .round-table-middle-bottom-right{
 	position: absolute;
 	top: 450px;
@@ -442,6 +585,16 @@
 	height: 80px;
 	cursor: pointer;
 	cursor: hand;
+}
+
+.round-table-middle-bottom-right-saved{
+	position: absolute;
+	top: 450px;
+	left: 920px;
+	width: 80px;
+	display: none;
+	cursor: pointer;
+	cursor: hand;	
 }
 
 #new_reservation{
@@ -533,6 +686,11 @@ footer h3{
 	height: 600px;
 	width: 80%;
 	margin: 0 auto;
+}
+
+#map{
+	margin-bottom: 100px;
+	margin-top: 100px;
 }
 
 input.qtyplus { width:25px; height:25px;}
