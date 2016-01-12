@@ -1,118 +1,20 @@
 <div class="house">
 
-<% if user_signed_in? %>
+  <%= image_tag("restaurant-floor.jpg", class: "floor") %>
 
-    <%= content_tag(:div, nil, remote: true, class: "top-right-booth-empty") %>
+  <!-- -------------Beginning of yellow queue tables-------------->
 
-    <%= content_tag(:div, nil, remote: true, class: "top-left-booth-empty") %>
-
-    <%= content_tag(:div, nil, remote: true, class: "diagonal-upper-left-booth-empty") %>
-
-    <%= content_tag(:div, nil, remote: true, class: "left-booth-empty") %>
-
-    <%= content_tag(:div, nil, remote: true, class: "diagonal-bottom-left-booth-empty") %>
-
-    <%= content_tag(:div, nil, remote: true, class: "bottom-left-booth-empty") %>
-
-    <%= content_tag(:div, nil, remote: true, class: "bottom-right-booth-empty") %>
-
-    <%= content_tag(:div, nil, remote: true, class: "round-table-left-bottom-empty") %>
-
-    <%= content_tag(:div, nil, remote: true, class: "round-table-left-top-empty") %>
-
-    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-top-left-empty") %> 
-
-    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-top-middle-empty") %> 
-
-    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-top-right-empty") %> 
-
-    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-bottom-left-empty") %> 
-
-    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-bottom-middle-empty") %> 
-
-    <%= content_tag(:div, nil, remote: true, class: "round-table-middle-bottom-right-empty") %>
+  <%= table :a1, "roundtable.png", top: 465, left: 446, width: 80 %>
+  <%= table :a2, "roundtable.png", top: 366, left: 446, width: 80 %>
 
 
-<% end %>
-
-
-    <%= image_tag("restaurant-floor.jpg", class: "floor") %>
-
-    <%= image_tag("toprightboothqueue.png", class: "top-right-booth grayed") %>
-
-    <%= image_tag("northleftqueue.png", class: "top-left-booth grayed") %>
-
-    <%= image_tag("upperleftboothqueue.png", class: "diagonal-upper-left-booth grayed") %>
-
-    <%= image_tag("leftboothqueue.png", class: "left-booth grayed") %>
-
-    <%= image_tag("bottomleftboothqueue.png", class: "diagonal-bottom-left-booth grayed") %>
-
-    <%= image_tag("bottomleftqueue.png", class: "bottom-left-booth grayed") %>
-
-    <%= image_tag("bottomrightboothqueue.png", class: "bottom-right-booth grayed") %>
-
-    <%= image_tag("roundtablequeue.png", class: "round-table-left-bottom grayed") %>
-
-    <%= image_tag("roundtablequeue.png", class: "round-table-left-top grayed") %>
-
-    <%= image_tag("roundtablequeue.png", class: "round-table-middle-top-left grayed") %>
-
-    <%= image_tag("roundtablequeue.png", class: "round-table-middle-top-middle grayed") %>
-
-    <%= image_tag("roundtablequeue.png", class: "round-table-middle-top-right grayed") %>
-
-    <%= image_tag("roundtablequeue.png", class: "round-table-middle-bottom-left grayed") %>
-
-    <%= image_tag("roundtablequeue.png", class: "round-table-middle-bottom-middle grayed") %>
-
-    <%= image_tag("roundtablequeue.png", class: "round-table-middle-bottom-right grayed") %>
+  <%= render 'reservation_form' if user_signed_in? %>
 
 
 
-<!-- -------------Beginning of yellow queue tables------------
- -->
- 
-    <%= image_tag("toprightbooth.png", class: "top-right-booth-saved saved")  %>
+  <% if owner_signed_in? %>
 
-    <%= image_tag("northleft.png", class: "top-left-booth-saved saved") %>
-
-    <%= image_tag("upperleftbooth.png", class: "diagonal-upper-left-booth-saved saved") %>
-
-    <%= image_tag("leftbooth.png", class: "left-booth-saved saved") %>
-
-    <%= image_tag("bottomleftbooth.png", class: "diagonal-bottom-left-booth-saved saved") %>
-
-    <%= image_tag("bottomleft.png", class: "bottom-left-booth-saved saved") %>
-
-    <%= image_tag("bottomrightbooth.png", class: "bottom-right-booth-saved saved") %>
-
-    <%= image_tag("roundtable.png", class: "round-table-left-bottom-saved saved") %>
-
-    <%= image_tag("roundtable.png", class: "round-table-left-top-saved saved") %>
-
-    <%= image_tag("roundtable.png", class: "round-table-middle-top-left-saved saved") %>
-
-    <%= image_tag("roundtable.png", class: "round-table-middle-top-middle-saved saved") %>
-
-    <%= image_tag("roundtable.png", class: "round-table-middle-top-right-saved saved") %>
-
-    <%= image_tag("roundtable.png", class: "round-table-middle-bottom-left-saved saved") %>
-
-    <%= image_tag("roundtable.png", class: "round-table-middle-bottom-middle-saved saved") %>
-
-    <%= image_tag("roundtable.png", class: "round-table-middle-bottom-right-saved saved") %>
-
-
-
-
-    <%= render 'reservation_form' if user_signed_in? %>
-
-
-
-<% if owner_signed_in? %>
-
-<script>
+    <script>
 
 var client = new Faye.Client('/faye');
 
@@ -120,9 +22,9 @@ var subscription = client.subscribe('/reservations', function(data){
   console.log(data);
 });
 
-</script>
+    </script>
 
-<% end %>
+  <% end %>
 
 
 </div>
