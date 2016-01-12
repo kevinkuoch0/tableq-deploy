@@ -1,1 +1,6 @@
-$('').append(@reservation)
+// Set the current table and change the class from selected to reserved
+
+$("[data-table=<%= @reservation.table %>]").removeClass("selected").addClass("reserved")
+// And publish the reservation that was made to owners that are listening
+var client = new Faye.Client("/faye")
+client.publish("/reservations", "<%= @reservation.table %>");

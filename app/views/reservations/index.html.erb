@@ -7,19 +7,44 @@
   <%= table :a1, "roundtable.png", top: 465, left: 446, width: 80 %>
   <%= table :a2, "roundtable.png", top: 366, left: 446, width: 80 %>
 
+  <% if user_signed_in? %>
+  <%= render 'reservation_form' %>
+  <script type="text/javascript">
+  $(function(){
+    $(".table").on("click",function() {
+    var isSelected = $(this).hasClass("selected");
 
-  <%= render 'reservation_form' if user_signed_in? %>
+    // Reset to empty state
+    $("#reservation_table").val("");
+    $(".table").removeClass("selected");
 
-
+    // Select this if it was not selected before
+    if(!isSelected){
+      $(this).addClass("selected");
+      $("#reservation_table").val($(this).data('table'))
+    }
+    });
+  })
+  </script>
+  <% end %>
 
   <% if owner_signed_in? %>
 
+
     <script>
+
+$(function(){
+    <% @reservations.each do |r| %>
+    $("[data-table=<%= r.table %>]").addClass("reserved")
+    <% end %>
+})
+
 
 var client = new Faye.Client('/faye');
 
-var subscription = client.subscribe('/reservations', function(data){
-  console.log(data);
+var subscription = client.subscribe('/reservations', function(table){
+  $("[data-table="+table+"]").addClass("reserved")
+  console.log(table)
 });
 
     </script>

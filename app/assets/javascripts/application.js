@@ -24,21 +24,6 @@ $(document).ready(function() {
 	$(".signin").on("click",function() {
 		$("#signin-popup").show();
 	});
-
-	$(".table").on("click",function() {
-    var isSelected = $(this).hasClass("selected");
-
-    // Reset to empty state
-    $("#reservation_table").val("");
-    $(".table").removeClass("selected");
-
-    // Select this if it was not selected before
-    if(!isSelected){
-      $(this).addClass("selected");
-      $("#reservation_table").val($(this).data('table'))
-    }
-	});
-
 });
 
 $( document ).ajaxComplete(function() {
