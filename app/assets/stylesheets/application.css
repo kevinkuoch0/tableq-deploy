@@ -13,7 +13,15 @@
  *= require_tree .
  *= require_self
  */
+body{
+	overflow-x: hidden;
+}
 
+@media (min-width: 1200px) {
+    .container-fluid{
+        min-width: 900px;
+    }
+}
 
 .navbar-nav img{
 	margin-top: 3%;
@@ -24,8 +32,8 @@
 	margin-top: 50px;
 }
 
+
 #signup-popup {
-	border: 1px solid red;
 	width: 35%;
 	left: 35%;
 	height: 600px;
@@ -34,12 +42,13 @@
 	display: none;
 	position: absolute;
 	position: fixed;
-	background-color: white;
+	background-color: #F8F8F8;
 	top: 100px;
+	box-shadow: 5px 5px 5px #888888;
+	z-index: 9999;
 }
 
 #signin-popup {
-	border: 1px solid red;
 	width: 35%;
 	left: 35%;
 	height: 600px;
@@ -48,8 +57,10 @@
 	display: none;
 	position: absolute;
 	position: fixed;
-	background-color: white;
+	background-color: #F8F8F8;
 	top: 100px;
+	box-shadow: 5px 5px 5px #888888;
+	z-index: 9999;
 }
 
 #signin-popup p{
@@ -57,7 +68,8 @@
 }
 
 #signin-popup img{
-	width: 30%;
+	margin-top: 20px;
+	width: 45%;
 	top:0;
     bottom: 0;
     left: 0;
@@ -67,11 +79,18 @@
 
 .sign-in-close{
 	width: 30px;
-/*	display: none;*/
+	display: none;
 	position: absolute;
 	position: fixed;
 	left: 69%;
 	top: 10%;
+	cursor: pointer;
+	z-index: 9999;
+}
+
+
+.sign-in-banner{
+	width: 80%;
 }
 
 #signup-popup p{
@@ -79,11 +98,13 @@
 }
 
 #signup-popup img{
-	width: 30%;
+	margin-top: 20px;
+	width: 45%;
 	top:0;
     bottom: 0;
     left: 0;
     right: 0;
+    left: 35%;
 }
 
 #flash{
@@ -121,7 +142,7 @@
 	padding-right: 15%;
   	padding-left: 15%;
   	position: fixed;
-  	z-index: 9999;
+  	z-index: 8500;
   	width: 100%;
   	top: 0;
 }
@@ -211,7 +232,7 @@ footer h3{
 	border-left:medium #404041 solid; 
 	height: 120px;
 	position: absolute;
-	left: 590px;
+	left: 35%;
 	
 }
 
@@ -221,7 +242,7 @@ footer h3{
 	border-left:medium #404041 solid; 
 	height: 120px;
 	position: absolute;
-	right: 590px;
+	right: 35%;
 	
 }
 

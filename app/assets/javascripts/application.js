@@ -20,9 +20,16 @@ $(document).ready(function() {
 	$("#flash").fadeOut(1800);
 	$(".signup").on("click",function() {
 		$("#signup-popup").show();
+		$(".sign-in-close").show();
 	});
 	$(".signin").on("click",function() {
 		$("#signin-popup").show();
+		$(".sign-in-close").show();
+	});
+	$(".sign-in-close").on("click",function() {
+		$("#signin-popup").hide();
+		$("#signup-popup").hide();
+		$(".sign-in-close").hide();
 	});
 });
 
