@@ -19,14 +19,17 @@
 $(document).ready(function() {
 	$("#flash").fadeOut(1800);
 	$(".signup").on("click",function() {
+		$(".darker").show();
 		$("#signup-popup").show();
 		$(".sign-in-close").show();
 	});
 	$(".signin").on("click",function() {
+		$(".darker").show();
 		$("#signin-popup").show();
 		$(".sign-in-close").show();
 	});
 	$(".sign-in-close").on("click",function() {
+		$(".darker").hide();
 		$("#signin-popup").hide();
 		$("#signup-popup").hide();
 		$(".sign-in-close").hide();
