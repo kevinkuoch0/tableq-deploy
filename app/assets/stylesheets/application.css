@@ -77,6 +77,8 @@ body{
 
 #signin-popup p{
 	margin-top: 10%;
+	font-family: "Madisonian Bold";
+	font-size: 21px;
 }
 
 #signin-popup img{
@@ -107,6 +109,8 @@ body{
 
 #signup-popup p{
 	margin-top: 10%;
+	font-family: "Madisonian Bold";
+	font-size: 21px;
 }
 
 #signup-popup img{
@@ -159,6 +163,57 @@ body{
   	top: 0;
 }
 
+#new_user{
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#user_email{
+	width: 60%;
+}
+
+#user_password{
+	width: 60%;
+}
+
+#user_password_confirmation{
+	width: 60%;
+}
+
+
+#new_owner{
+	width: 400px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#owner_email{
+	width: 60%;
+}
+
+#owner_password{
+	width: 60%;
+}
+
+#owner_password_confirmation{
+	width: 60%;
+}
+
+.wrapper h2{
+	text-align: center;
+	margin: 0 auto;
+}
+
+.wrapper a {
+	margin:20px auto; 
+
+	text-align:center; 
+
+	display:block; 
+
+	width:150px
+}
 
 .banner{
     display: block;
