@@ -67,6 +67,7 @@ function addMarkerToMap(restaurant,map){
 }
 
 function initMap(){
+
 	var initialLocation = {lat: 39.9522334, lng: -75.1694917 };
 
 	var map = new google.maps.Map(document.getElementById('map'), {

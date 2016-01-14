@@ -44,6 +44,28 @@ body{
 	margin-top: 50px;
 }
 
+.sign-up-border{
+	border: 1px solid black;
+	width: 50%;
+	margin: auto;
+	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	border-radius: 25px;
+	background-color: #FDFDFD;
+}
+
+.sign-in-border{
+	border: 1px solid black;
+	width: 50%;
+	margin: auto;
+	-moz-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+	border-radius: 25px;
+	background-color: #FDFDFD;
+	z-index: -100
+}
 
 #signup-popup {
 	width: 35%;
@@ -170,15 +192,21 @@ body{
 }
 
 #user_email{
-	width: 60%;
+	width: 80%;
+	font-size: 18px;
+	text-align: center;
 }
 
 #user_password{
-	width: 60%;
+	width: 80%;
+	font-size: 18px;
+	text-align: center;
 }
 
 #user_password_confirmation{
-	width: 60%;
+	width: 80%;
+	font-size: 18px;
+	text-align: center;	
 }
 
 
@@ -189,21 +217,62 @@ body{
 }
 
 #owner_email{
-	width: 60%;
+	width: 80%;
+	height: 50px;
+	font-size: 18px;
+	text-align: center;	
 }
 
 #owner_password{
-	width: 60%;
+	width: 80%;
+	height: 50px;
+	text-align: center;	
 }
 
 #owner_password_confirmation{
-	width: 60%;
+	width: 80%;
+	height: 50px;
+	text-align: center;	
+}
+
+#user_password_confirmation{
+	width: 80%;
+	height: 50px;
+	text-align: center;	
+}
+
+#user_email{
+	width: 80%;
+	height: 50px;
+}
+
+#user_password{
+	width: 80%;
+	height: 50px;
+}
+
+label {
+    font-size: 34px;
+    font-family: "Madisonian Bold";
 }
 
 .wrapper h2{
+	padding-top: 30px;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 38px;
+	font-family: "Madisonian Bold";
+}
+
+.wrapper p{
 	text-align: center;
 	margin: 0 auto;
 }
+
+input[name=commit] {    
+width: 200px;
+height: 50px;
+}   
 
 .wrapper a {
 	margin:20px auto; 
