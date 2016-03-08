@@ -46,6 +46,7 @@ $( document ).ajaxComplete(function() {
 function renderRestaurantInfo(restaurant){
   return (
     "<h2>"+restaurant.title+"</h2>" +
+    "<img src='/assets/Cucina.jpg'>" +
     "<a href='/reservations/index'>Make a Reservation</a>"
   );  
 }
@@ -76,7 +77,7 @@ function initMap(){
 	}); 
 
 	var restaurant = { 
-		title: 'My Restaurant',
+		title: 'La Cucina',
 		lat: 39.9522334,
 		lng: -75.1694917
 	}
